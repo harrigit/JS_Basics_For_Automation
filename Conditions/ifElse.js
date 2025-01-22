@@ -42,4 +42,46 @@ if(!A){
 //     throw Error("Error In Your Message");
 // } //Due To This Code Whole File Is Not Working That Why I am Commenting This File  B/w this File Will Throw Error Because value of B is Not Falsy Mean Not Null or Undefind  Etc
 
-    // Nested if 
+// Nested if 
+ 
+let err1="Unknown";
+
+if (err1==="Error") {
+    console.log("Wrong");
+    
+} else if (err1==="false"){
+    console.log("error Not Found");
+    
+}else{
+    console.log(`This was The ${err1} Error`);
+}
+
+
+//inner Condition
+let TestResult="fail"
+if (TestResult=="Pass") {
+    console.log("you are pass");
+    
+} else {
+    console.log("You are Fail But..");
+    let Subject="Math"
+    if(Subject=="Math"){
+        console.log(" you are Only Fail In Maths So Try Again In");
+    }else{
+        console.log("You are Full fail");
+    }
+    
+}
+
+
+///if codition in for Loop
+for (let i = 0; i <=10; i++) {
+    if (i==1) {
+        console.log("Break");
+        break;
+        
+    }else{
+        console.log(i,"And Continu");
+    }
+    
+}
